@@ -263,9 +263,7 @@ class Draw
     /* Scale the current context by the specified factor */
     scale( factor )
     {
-        var tempDraw = new Draw();
-        
-        var temp = tempDraw.init({ 
+        var temp = new Draw({ 
             dims: { 
                 x: this.dims.x*factor, 
                 y: this.dims.y*factor 
